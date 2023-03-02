@@ -22,7 +22,7 @@ public class hero {
 		
 		public void sleep() {
 			this.hp = this.hp + 10;
-			System.out.println("체력을 회복했습니다.");
+			System.out.println("숙면을 취해 체력이 회복되었습니다.");
 			System.out.println(this.hp);
 			System.out.println("");			
 		}
