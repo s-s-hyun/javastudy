@@ -2,16 +2,25 @@ package study;
 
 public class umi {
 
-	static int abi;
-	static int hp;
-	static int def;
-	static int hill;
+	int att;
+	int hp;
+	int def;
+	int hill;
 	
-	public void umi( ) {
-		this.hill = hp + 70;
-		this.hp -= 60;
-		this.def -= 50;
-		this.hp -= abi;
+	public void hill() {
+		this.hp += this.hill;
+	}
 		
-	}	
+	public void att(garen g) {
+		g.hp -= this.att;
+	}
+	
+	public void def(garen g) {
+		this.hp = (this.def - g.att);
+	}
+	
+	public void hp() {
+		this.hp = this.hp;
+	}
+		
 }

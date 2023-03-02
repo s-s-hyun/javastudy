@@ -2,23 +2,24 @@ package study;
 
 public class garen {
 	
-	static int att;
-	static int hp;
-	static int def;
-	static int simpan;
+	int att;
+	int hp;
+	int def;
+	int simpan;
 	
-	public void garen() {
-		this.simpan = hp - 70;
-		this.att = hp - 50;
-		this.def -= 30;
-		this.hp = hp - def - att;
+	public void simpan(umi u) {
+		u.hp -= this.simpan;
 	}
-
 	
-
-	public garen() {
-		// TODO Auto-generated method stub
-		
+	public void att(umi u) {
+		u.hp -= this.att;
 	}
+	
+	public void def(umi u) {
+		this.hp = (this.def - u.att);
+	}
+	
+	public void hp() {
+		this.hp = this.hp;
+	}		
 }
-
